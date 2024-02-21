@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => MyAppState(),
       child: MaterialApp(
-        title: 'Namer App',
+        title: 'Name App',
         theme: ThemeData(
             useMaterial3: true,
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange)),
@@ -50,7 +50,7 @@ class MyHomePage extends StatelessWidget {
                 onPressed: () {
                   appState.getNext();
                 },
-                child: Text('Next'))
+                child: Text('Next Button'))
           ],
         ),
       ),
